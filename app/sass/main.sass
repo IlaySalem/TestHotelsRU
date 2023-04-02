@@ -1,0 +1,384 @@
+@import 'vars/colors'
+@font-face 
+	font-family: "Tahoma"
+	src: url('../fonts/tahoma.ttf') format('truetype')
+	font-style: normal
+body
+	font-family: "Tahoma", sans-serif !important
+	font-size: 15px 
+	font-weight: 600 
+	color: $fontcolor !important
+	margin: 0px 
+	background-color: $fontcolor
+	input
+		cursor: pointer 
+::-webkit-input-placeholder
+	color: $placeholder
+	font-weight: 100
+	padding: 10px
+	font-size: 15px 
+
+
+.loader 
+	background: none repeat scroll 0 0 $fontcolor
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+.loader .loader_inner 
+	background-image: url("../img/preloader.gif")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: $fontcolor
+	height: 80px
+	width: 80px
+	margin-top: -40px
+	margin-left: -40px
+	left: 50%
+	top: 50%
+	position: absolute
+.note
+	position: absolute
+	width: 400px
+	height: 200px
+	background-color: red
+.fill
+	position: absolute
+	width: 200%
+	top: 50%
+	margin-bottom: -50% 
+	transform: translate(-50%, -50%)
+	.fillHead
+		position: relative
+		background-color: $header
+		height: 46px
+	.fillForm
+		position: relative
+		background-color: $formBg
+		top: 0px
+		height: 350px
+.myContainer
+	position: absolute
+	z-index: 2
+	top: 50%
+	width: 100%
+	max-width: 852px
+	left: 50% 
+	margin-right: -50%
+	margin-bottom: -50% 
+	transform: translate(-50%, -50%)
+	margin: auto
+	.header
+		position: relative
+		height: 46px
+		.menu
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			align-items: center
+			position: relative
+			z-index: 9
+			list-style-type: none
+			text-transform: uppercase
+			margin: 0px
+			padding: 0px
+			background-color: $header
+			li
+				padding: 13px 5px //15px
+				text-align: center
+				p
+					margin: 0px
+					transform: scale(1, .85)
+				&:hover
+					cursor: pointer	
+				&:nth-child(8)
+					color: $inactive 
+					font-weight: 100
+					a
+						//text-decoration: underline
+						//text-decoration-style: solid
+						border-bottom: 1px solid $inactive 
+						text-transform: capitalize
+					&:hover
+						color: $fontcolor
+						a
+							border-bottom: 1px solid $fontcolor
+
+
+			.fa, .ei
+				margin: 0px 8px
+
+			.tickets
+				&:hover
+					background-color: $headerAccent
+					cursor: pointer	
+				.ticketsGuide
+					z-index: 10
+					position: absolute
+					display: none
+					opacity: 0
+					list-style-type: none
+					text-transform: none
+					margin: 16px 15px //18px
+					padding: 0px
+					li
+						border: 1px solid rgba(162, 162, 162, 0.1)
+						margin: 0px
+						padding: 6px 12px
+						text-align: left
+						background-color: $fontcolor
+						color: $ticketsFont
+						margin-left: -20px
+						transform: scale(1, 1.2)
+						font-weight: 800
+						&:hover
+							background-color: $ticketsGuideHover 
+	.main_form
+		position: relative
+		background-color: $formBg
+		min-height: 350px
+		//min-width: 626px
+		.form-control1
+			height: 40px
+			min-width: 80px
+			border-radius: 5px
+			border: 1px solid rgba(162, 162, 162, 0.1)
+		.hat
+			width: 100%
+			min-height: 120px
+			padding: 0px
+			margin: 0px 
+			text-align: center
+			display: flex
+			flex-flow: column wrap
+			justify-content: center
+			align-items: center
+			position: relative
+			h1
+				font-weight: 200
+		p
+				font-weight: 100
+				margin: 0 0 3px
+		a
+			color: $inactive 
+			font-weight: 100
+		.cityRaw
+			position: relative
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			align-items: center
+			.city
+				width: 46%//43.5%
+				min-width: 200px
+			i
+				width: 5%
+				min-width: 50px
+				text-align: center
+				font-size: 30px	
+				color: $inactive
+				position: relative
+				font-weight: 100
+				&:hover
+					color: $fontcolor
+					cursor: pointer
+			input
+				width: 100%
+			a2, a3
+				border-bottom: 1px dashed $inactive
+				&:hover
+					color: $fontcolor
+					border: none
+					cursor: pointer
+
+
+			
+		
+		.searchRaw
+			position: relative
+			display: flex
+			flex-flow: row wrap
+			justify-content: space-between
+			align-items: center
+			margin-top: 30px
+			
+			.date
+				min-width: 150px
+				height: 40px
+				border-radius: 5px
+				border: 1px solid rgba(162, 162, 162, 0.1)
+				background-image: url("../img/calendar.png")
+				//background-size: cover
+				background-repeat: no-repeat
+				background-position: 90% center
+
+			.retDate
+				.inactiveDate
+					background-color: $inactiveDateBG 
+					border: 1px solid $inactiveDateBorder
+					color: $inactiveDateFont !important
+					background-image: url("../img/calendarInactive.png")
+				// ::-webkit-input-placeholder
+				// .ei-calendar::before, .ei-icon_calendar::before
+				// 	content: '\e023'
+				// 	color: black
+			.selectBox
+				width: 86px
+				font-weight: 750
+				padding: 5px
+			.roundtrip
+				align-self: flex-end
+				margin-bottom: 5px
+				margin-right: -20px
+				height: 34px
+				//background-color: red
+				min-width: 120px
+				overflow: hidden
+				background-image: url("../img/rectangle.png")
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: center center
+				.roundBox
+					display: flex
+					flex-flow: raw nowrap
+					justify-content: flex-start
+					align-items: center
+					margin: 6px
+					p
+						font-size: 15px
+						margin: 2px -2px
+						cursor: default
+					input
+						float: left
+						height: 17px
+						width: 17px
+			
+					
+			.btn
+				align-self: flex-end
+				background: linear-gradient($btnColor1, $btnColor2)
+				border: 1px solid $btnColor2
+				border-radius: 3px
+				color: $fontcolor
+				font-weight: 100
+				min-width: 120px
+				width: 21%
+				//width: 180px
+				height: 47px
+				margin: 0px
+				padding: 0px
+				i
+					margin: 10px
+					font-size: 14px
+	.rr
+		height: 200px
+		width: 200px
+		overflow: hidden
+		background-image: url("../img/rectangle.png")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		// .checkbox 
+		// 	position: absolute
+		// 	z-index: -1
+		// 	opacity: 0
+		// 	margin 10px 0 0 20px
+		// .checkbox + label
+		// 	position: relative
+		// 	padding: 0 0 0 60px
+		// 	cursor: pointer
+		// .checkbox + label:before
+		// 	content: ''
+		// 	position: absolute
+		// 	top: -4px
+		// 	left: 0
+		// 	width: 50px
+		// 	height: 26px
+		// 	border-radius: 13px
+		// 	background-color: #CDD1DA
+		// 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2)
+		// 	transition: .2s
+		// .checkbox + label:after
+		// 	content: ''
+		// 	position: absolute
+		// 	top: -2px
+		// 	left: 2px
+		// 	width: 22px
+		// 	height: 22px
+		// 	border-radius: 10px
+		// 	background-color: #FFF
+		// 	box-shadow: 0 2px 5px rgba(0, 0, 0, .3)
+		// 	transition: .2s
+		// .checkbox:checked + label:before
+		// 	background-color: #9FD468
+.container 
+	display: block
+	position: relative
+	padding-left: 35px
+	margin-bottom: 12px
+	cursor: pointer
+	font-size: 22px
+	-webkit-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+/*_______custom checkBox_______*/
+.container 
+	cursor: default
+	input 
+		position: absolute
+		left: 3px
+		top: 1px
+		width: 18px
+		height: 18px
+		opacity: 0
+		z-index: 10
+	.checkmark 
+		position: absolute
+		top: 2px
+		left: 6px
+		height: 18px
+		width: 18px
+		background-color: white
+		border-radius: 3px
+		box-shadow: inset 0 2px 3px rgba(0, 0, 0, .5)
+.checkmark:after 
+	content: ""
+	position: absolute
+	display: none
+.container input:checked 
+	display: block 
+.checkmark:after 
+	display: block
+.container .checkmark:after 
+	left: 6px
+	top: 3px
+	width: 4px
+	height: 8px
+	border: solid $formBg
+	border-width: 0 3px 3px 0
+	-webkit-transform: rotate(45deg)
+	-ms-transform: rotate(45deg)
+	transform: rotate(45deg)
+
+.hideMark 
+	position: absolute
+	top: 2px
+	left: 6px
+	height: 18px
+	width: 18px
+	background-color: white
+	border-radius: 3px
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, .5)
+	opacity: 1
+.hideMark:after 
+	content: ""
+	position: absolute
+	display: none
+

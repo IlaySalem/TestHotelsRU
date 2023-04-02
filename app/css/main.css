@@ -1,0 +1,427 @@
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/tahoma.ttf") format("truetype");
+  font-style: normal; }
+
+body {
+  font-family: "Tahoma", sans-serif !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff !important;
+  margin: 0px;
+  background-color: #fff; }
+  body input {
+    cursor: pointer; }
+
+::-webkit-input-placeholder {
+  color: #a9a9a9;
+  font-weight: 100;
+  padding: 10px;
+  font-size: 15px; }
+
+.loader {
+  background: none repeat scroll 0 0 #fff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  left: 50%;
+  top: 50%;
+  position: absolute; }
+
+.note {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: red; }
+
+.fill {
+  position: absolute;
+  width: 200%;
+  top: 50%;
+  margin-bottom: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .fill .fillHead {
+    position: relative;
+    background-color: #54add8;
+    height: 46px; }
+  .fill .fillForm {
+    position: relative;
+    background-color: #0085c5;
+    top: 0px;
+    height: 350px; }
+
+.myContainer {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 100%;
+  max-width: 852px;
+  left: 50%;
+  margin-right: -50%;
+  margin-bottom: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin: auto; }
+  .myContainer .header {
+    position: relative;
+    height: 46px; }
+    .myContainer .header .menu {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative;
+      z-index: 9;
+      list-style-type: none;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px;
+      background-color: #54add8; }
+      .myContainer .header .menu li {
+        padding: 13px 5px;
+        text-align: center; }
+        .myContainer .header .menu li p {
+          margin: 0px;
+          -webkit-transform: scale(1, 0.85);
+              -ms-transform: scale(1, 0.85);
+                  transform: scale(1, 0.85); }
+        .myContainer .header .menu li:hover {
+          cursor: pointer; }
+        .myContainer .header .menu li:nth-child(8) {
+          color: #a8d5eb;
+          font-weight: 100; }
+          .myContainer .header .menu li:nth-child(8) a {
+            border-bottom: 1px solid #a8d5eb;
+            text-transform: capitalize; }
+          .myContainer .header .menu li:nth-child(8):hover {
+            color: #fff; }
+            .myContainer .header .menu li:nth-child(8):hover a {
+              border-bottom: 1px solid #fff; }
+      .myContainer .header .menu .fa, .myContainer .header .menu .ei {
+        margin: 0px 8px; }
+      .myContainer .header .menu .tickets:hover {
+        background-color: #f75c00;
+        cursor: pointer; }
+      .myContainer .header .menu .tickets .ticketsGuide {
+        z-index: 10;
+        position: absolute;
+        display: none;
+        opacity: 0;
+        list-style-type: none;
+        text-transform: none;
+        margin: 16px 15px;
+        padding: 0px; }
+        .myContainer .header .menu .tickets .ticketsGuide li {
+          border: 1px solid rgba(162, 162, 162, 0.1);
+          margin: 0px;
+          padding: 6px 12px;
+          text-align: left;
+          background-color: #fff;
+          color: #000;
+          margin-left: -20px;
+          -webkit-transform: scale(1, 1.2);
+              -ms-transform: scale(1, 1.2);
+                  transform: scale(1, 1.2);
+          font-weight: 800; }
+          .myContainer .header .menu .tickets .ticketsGuide li:hover {
+            background-color: #bfd8eb; }
+  .myContainer .main_form {
+    position: relative;
+    background-color: #0085c5;
+    min-height: 350px; }
+    .myContainer .main_form .form-control1 {
+      height: 40px;
+      min-width: 80px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      border: 1px solid rgba(162, 162, 162, 0.1); }
+    .myContainer .main_form .hat {
+      width: 100%;
+      min-height: 120px;
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative; }
+      .myContainer .main_form .hat h1 {
+        font-weight: 200; }
+    .myContainer .main_form p {
+      font-weight: 100;
+      margin: 0 0 3px; }
+    .myContainer .main_form a {
+      color: #a8d5eb;
+      font-weight: 100; }
+    .myContainer .main_form .cityRaw {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .myContainer .main_form .cityRaw .city {
+        width: 46%;
+        min-width: 200px; }
+      .myContainer .main_form .cityRaw i {
+        width: 5%;
+        min-width: 50px;
+        text-align: center;
+        font-size: 30px;
+        color: #a8d5eb;
+        position: relative;
+        font-weight: 100; }
+        .myContainer .main_form .cityRaw i:hover {
+          color: #fff;
+          cursor: pointer; }
+      .myContainer .main_form .cityRaw input {
+        width: 100%; }
+      .myContainer .main_form .cityRaw a2, .myContainer .main_form .cityRaw a3 {
+        border-bottom: 1px dashed #a8d5eb; }
+        .myContainer .main_form .cityRaw a2:hover, .myContainer .main_form .cityRaw a3:hover {
+          color: #fff;
+          border: none;
+          cursor: pointer; }
+    .myContainer .main_form .searchRaw {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 30px; }
+      .myContainer .main_form .searchRaw .date {
+        min-width: 150px;
+        height: 40px;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        border: 1px solid rgba(162, 162, 162, 0.1);
+        background-image: url("../img/calendar.png");
+        background-repeat: no-repeat;
+        background-position: 90% center; }
+      .myContainer .main_form .searchRaw .retDate .inactiveDate {
+        background-color: #1395d3;
+        border: 1px solid #0076ad;
+        color: #94c4db !important;
+        background-image: url("../img/calendarInactive.png"); }
+      .myContainer .main_form .searchRaw .selectBox {
+        width: 86px;
+        font-weight: 750;
+        padding: 5px; }
+      .myContainer .main_form .searchRaw .roundtrip {
+        -webkit-align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        margin-bottom: 5px;
+        margin-right: -20px;
+        height: 34px;
+        min-width: 120px;
+        overflow: hidden;
+        background-image: url("../img/rectangle.png");
+        -webkit-background-size: cover;
+                background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
+        .myContainer .main_form .searchRaw .roundtrip .roundBox {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: raw nowrap;
+              -ms-flex-flow: raw nowrap;
+                  flex-flow: raw nowrap;
+          -webkit-box-pack: start;
+          -webkit-justify-content: flex-start;
+              -ms-flex-pack: start;
+                  justify-content: flex-start;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          margin: 6px; }
+          .myContainer .main_form .searchRaw .roundtrip .roundBox p {
+            font-size: 15px;
+            margin: 2px -2px;
+            cursor: default; }
+          .myContainer .main_form .searchRaw .roundtrip .roundBox input {
+            float: left;
+            height: 17px;
+            width: 17px; }
+      .myContainer .main_form .searchRaw .btn {
+        -webkit-align-self: flex-end;
+            -ms-flex-item-align: end;
+                align-self: flex-end;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fcc272), to(#de5300));
+        background: -webkit-linear-gradient(#fcc272, #de5300);
+        background: -o-linear-gradient(#fcc272, #de5300);
+        background: linear-gradient(#fcc272, #de5300);
+        border: 1px solid #de5300;
+        -webkit-border-radius: 3px;
+                border-radius: 3px;
+        color: #fff;
+        font-weight: 100;
+        min-width: 120px;
+        width: 21%;
+        height: 47px;
+        margin: 0px;
+        padding: 0px; }
+        .myContainer .main_form .searchRaw .btn i {
+          margin: 10px;
+          font-size: 14px; }
+  .myContainer .rr {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    background-image: url("../img/rectangle.png");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*_______custom checkBox_______*/
+.container {
+  cursor: default; }
+  .container input {
+    position: absolute;
+    left: 3px;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+    z-index: 10; }
+  .container .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5); }
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.container input:checked {
+  display: block; }
+
+.checkmark:after {
+  display: block; }
+
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 4px;
+  height: 8px;
+  border: solid #0085c5;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.hideMark {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
+  opacity: 1; }
+
+.hideMark:after {
+  content: "";
+  position: absolute;
+  display: none; }

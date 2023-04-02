@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hotels(test)</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/elegant-icons/css/elegant-icons.min.css">
+	
+</head>
+<body>
+<div class="loader">
+		<div class="loader_inner"></div>
+</div>
+<div class="fill">
+	<div class="fillHead"></div>
+	<div class="fillForm"></div>
+</div>
+<div class="note">
+	
+</div>
+<div class="myContainer">
+	<div class="header">
+		<ul class="menu ">
+			<li class="searchTickets"><nobr><p>search tickets</p></nobr></li>
+			<li class="sapsan"><p>sapsan</p></li>
+			<li class="allegro"><p>allegro</p></li>
+			<li class="trans-siberian">
+				<nobr><p>trans-siberian<i class="fa fa-caret-down"></i></p></nobr>
+			</li>
+			<li class="faq">
+				<nobr><p>faq<i class="fa fa-caret-down"></i></p></nobr>
+			</li>
+			<li id="hidden" class="tickets">
+				<nobr><p>tickets guide<i class="fa fa-caret-down"></i></p></nobr>
+				<ul class="ticketsGuide">
+					<li><p>Group travel</p></li>
+					<li><p>Tickets types</p></li>
+					<li><p>Child policy</p></li>
+					<li><p>Change ticket request</p></li>
+					<li><p>Change tickets</p></li>
+				</ul>
+			</li>
+			<li class="contact">
+				<nobr><p>contact us<i class="fa fa-caret-down"></i></p></nobr>
+			</li>
+			<li class="sign">
+				<nobr><p><i class="ei ei-profile"></i><a>sign in</a></p></nobr>
+			</li>		
+		</ul>
+	</div>
+	<form id="myForm" action="http://formspree.io/kedevra@bk.ru" class="main_form" method="post" novalidate >
+		<div class="hat">
+			<h1>Russian Train Tickets</h1>
+		</div>
+		<div class="cityRaw">
+			<div class="city">
+				<p>Departure city:</p>
+				<input type="text" name="City name Arr" placeholder="Type city name" class="form-control1" aria-describedby="inputSuccess2Status"/>
+				<br><a>Ex: <a2>St. Petersburg</a2>, <a3>Moscow</a3></a>	
+			</div>
+			<i class="ei ei-arrow_left-right_alt"></i>
+			<div class="city">
+				<p>Arrival city:</p>
+				<input type="text" name="City name Dep" placeholder="Type city name" class="form-control1 " aria-describedby="inputSuccess2Status"/>
+				<br><a>Ex: <a2>St. Petersburg</a2>, <a3>Moscow</a3></a>	
+			</div>
+		</div>
+		<div class="searchRaw">
+			<div class="depDate">
+				<p>Departure date:</p>
+				<input type="text" name="Departure date" placeholder="dd.mm.yyyy" class="date" aria-describedby="inputSuccess2Status"></input><!-- <i class="ei ei-calendar"></i> -->
+			</div>
+			<div class="roundtrip">
+				
+				<div class="roundBox">
+					<!-- <input  id="chb" type="checkbox" class="chBox"></input>
+					<p>Roundtrip</p> -->
+					<div  class="container">
+						<input  id="chb" type="checkbox" class="checkbox">
+						<label  class="checkmark"></label>
+						<label  class="hideMark"></label>
+						<p>Roundtrip</p>
+					</div>
+					
+					
+				</div>
+			</div>
+			<div class="retDate">
+				<p>Return date:</p>
+					<input id="returnDate" type="text" name="Return date" placeholder="dd.mm.yyyy" class="date inactiveDate" aria-describedby="inputSuccess2Status"></input><!-- <i class="ei ei-calendar"></i> -->
+			</div>
+			<div class="currency">
+				<p>Currency</p>
+				<select class="selectBox form-control1">
+					<option  value="GroupTravel">RUB</option>
+					<option  value="TickTypes">USD</option>
+					<option  value="ChildPolicy">GBR</option>
+					<option  value="ChTickReq">EUR</option>
+					<option  value="ChTick">CHF</option>
+				</select>
+			</div>
+			<button id="submitButton" class="btn shadow" name="submit" type="submit" disabled><i class="ei ei-search"></i>Search</button>
+		</div>
+	</form>
+	
+</div>
+
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
